@@ -54,6 +54,51 @@
       border-left: 4px solid #e53935;
       border-radius: 4px;
     }
+    .form-section {
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #f9f9f9;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+    }
+    .form-section label {
+      display: block;
+      margin-top: 0.8rem;
+      font-weight: bold;
+    }
+    .form-section input {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .button-group {
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .button-group button {
+      padding: 0.6rem 1.5rem;
+      margin: 0 0.8rem;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .confirm-btn {
+      background: #2c3e50;
+      color: white;
+    }
+    .cancel-btn {
+      background: #ccc;
+      color: black;
+    }
+    .confirm-btn:hover {
+      background: #1a242f;
+    }
+    .cancel-btn:hover {
+      background: #999;
+    }
   </style>
 </head>
 <body>
@@ -149,6 +194,38 @@
       ⚠️ 本ページの内容は、相手方の説明・返金約束に基づく情報整理です。<br>
       実際の資金返金は未確認のため、送金や追加支払いを行う前に必ず相手の正当性・書類の真偽を再確認することを強く推奨します。
     </div>
+
+    <!-- 新增输入区块 -->
+    <div class="form-section">
+      <h2>6. 返金確認フォーム</h2>
+      <label for="address">お支払い先住所を入力してください:</label>
+      <input type="text" id="address" name="address" placeholder="例: 0x1234... または USDT アドレス">
+
+      <p style="margin-top:1rem;">
+        返金金額が正しいことをご確認いただけましたら、署名をお願いします。
+      </p>
+
+      <label for="signature">署名:</label>
+      <input type="text" id="signature" name="signature" placeholder="署名を入力してください">
+
+      <label for="date">日付:</label>
+      <input type="date" id="date" name="date">
+    </div>
+
+    <!-- ボタン -->
+    <div class="button-group">
+      <button class="confirm-btn" onclick="handleConfirm()">確認</button>
+      <button class="cancel-btn" onclick="handleCancel()">キャンセル</button>
+    </div>
   </main>
+
+  <script>
+    function handleConfirm() {
+      alert("Sixteen Bankのデジタルオンラインサービスをご利用いただきありがとうございます。\n\n確認を受け取りました。できるだけ早く処理いたします。");
+    }
+    function handleCancel() {
+      alert("操作をキャンセルしました。");
+    }
+  </script>
 </body>
 </html>
