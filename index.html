@@ -1,88 +1,80 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>指定送金完了のご案内 — DA-2025-0921-001</title>
-<style>
-  body { font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif; background:#f4f6f9; margin:0; padding:24px; color:#222; }
-  .email-card { max-width:720px; margin:20px auto; background:#fff; border-radius:10px; box-shadow:0 6px 18px rgba(20,30,40,0.08); padding:22px; border:1px solid #e6e9ee; }
-  .brand { display:flex; align-items:center; gap:12px; }
-  .brand h1 { font-size:18px; margin:0; color:#0b4b7a; }
-  .meta { color:#6b7280; font-size:13px; margin-top:6px; }
-  table { width:100%; border-collapse:collapse; margin-top:16px; }
-  th, td { padding:10px 8px; text-align:left; border-bottom:1px dashed #eef2f7; font-size:14px; vertical-align:top; }
-  th { width:36%; color:#333; background:#fbfdff; font-weight:600; }
-  .status { display:inline-block; padding:6px 10px; border-radius:999px; color:#fff; background:#16a34a; font-weight:600; font-size:13px; }
-  .amount { font-size:18px; font-weight:700; color:#111; margin-top:8px; }
-  .cta { margin-top:18px; text-align:center; }
-  .btn { display:inline-block; background:#0b63c6; color:#fff; padding:12px 18px; border-radius:8px; text-decoration:none; font-weight:700; box-shadow:0 6px 16px rgba(11,99,198,0.18); }
-  .hint { margin-top:10px; color:#6b7280; font-size:13px; }
-  .footer { margin-top:20px; font-size:13px; color:#556; border-top:1px solid #eef2f7; padding-top:12px; }
-  @media (max-width:600px){ .brand h1{font-size:16px} th{display:block;width:100%} td{display:block;width:100%;padding-bottom:12px} }
-</style>
+  <meta charset="UTF-8">
+  <title>指定送金（完了）のご案内</title>
+  <style>
+    body {
+      font-family: "Hiragino Kaku Gothic Pro", "Meiryo", sans-serif;
+      background-color: #f4f6f8;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 700px;
+      margin: 30px auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 30px;
+      line-height: 1.6;
+      color: #333;
+    }
+    h1 {
+      font-size: 20px;
+      color: #2a5db0;
+      border-bottom: 2px solid #e5e5e5;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    .info {
+      background: #f9fbfd;
+      border: 1px solid #e0e6ed;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+    .info p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+    .footer {
+      font-size: 12px;
+      color: #555;
+      margin-top: 30px;
+      border-top: 1px solid #eee;
+      padding-top: 15px;
+    }
+    .highlight {
+      font-weight: bold;
+      color: #000;
+    }
+  </style>
 </head>
 <body>
-  <div class="email-card" role="article" aria-label="指定送金完了のご案内">
-    <div class="brand">
-      <div>
-        <h1>指定送金（送金完了）のお知らせ</h1>
-        <div class="meta">参照番号：DA-2025-0921-001　｜　生成日時：2025年10月3日</div>
-      </div>
+  <div class="container">
+    <h1>指定送金（完了）のご案内</h1>
+    <p>ご指定の口座への送金が完了いたしました。下記の内容をご確認ください。</p>
+
+    <div class="info">
+      <p><span class="highlight">参照番号：</span>DA-2025-0921-001</p>
+      <p><span class="highlight">送金金額：</span>¥4,611,303</p>
+      <p><span class="highlight">受取口座：</span>十六銀行 恵那支店 8296856</p>
+      <p><span class="highlight">口座名義：</span>コンドウ タカコ</p>
+      <p><span class="highlight">送金日時：</span>2025年10月3日 22:10</p>
+      <p><span class="highlight">入金予定：</span>2025年10月4日 午前11:50（日本時間）</p>
     </div>
 
-    <table role="table" aria-label="送金情報">
-      <tr><th>送金方式</th><td>定時送金</td></tr>
-      <tr><th>送金金額</th><td class="amount">¥4,611,303</td></tr>
-      <tr><th>指定送金日時</th><td>2025年10月3日 22:10</td></tr>
-      <tr><th>口座名義</th><td>コンドウ タカコ</td></tr>
-      <tr><th>口座番号</th><td>8296856</td></tr>
-      <tr><th>受取銀行</th><td>十六銀行 恵那支店</td></tr>
-      <tr><th>申請手数料</th><td>240 USDT（支払済み）</td></tr>
-      <tr><th>送金ステータス</th><td><span class="status">処理済み</span></td></tr>
-      <tr><th>入金予定時刻</th><td>日本時間 2025年10月4日 午前11時50分</td></tr>
-    </table>
-
-    <div class="cta">
-      <p class="hint">合計 ¥4,611,303 は、参照番号 DA-2025-0921-001 のクラウド保管庫に保存されています。資金を受け取るには、下のボタンをクリックして 6 桁のパスワードを入力してください。</p>
-      <a href="#" class="btn" onclick="promptWithdraw(event)">ここをクリックして資金を受け取る</a>
-      <div id="feedback" class="hint" style="margin-top:12px;"></div>
-    </div>
+    <p>本取引に関する詳細は <strong>SMS または メール</strong> にてご確認ください。<br>
+    このメールは送信専用です。ご不明点がある場合は、下記お問い合わせ先までご連絡ください。</p>
 
     <div class="footer">
-      <div>発行機関：十六銀行 恵那支店　｜　発行日：2025年9月25日</div>
-      <div style="margin-top:8px;">業務協力：十六電算デジタルサービス株式会社 業務部</div>
-      <div style="margin-top:8px;">≪お問い合わせ先≫ TEL：0120-165-025（直通）　FAX：058-264-9016（直通）　受付時間：金融機関営業日 9:00～17:00</div>
+      発行機関：十六銀行 恵那支店<br>
+      業務協力：十六電算デジタルサービス株式会社 業務部<br><br>
+      ≪お問い合わせ先≫<br>
+      TEL：0120-165-025（直通）<br>
+      受付時間：金融機関営業日 9:00～17:00
     </div>
   </div>
-
-<script>
-function promptWithdraw(e){
-  e.preventDefault();
-  const pwd = prompt("6桁のパスワードを入力してください（半角数字）：");
-  const feedback = document.getElementById('feedback');
-
-  if(pwd === null){
-    feedback.textContent = "操作がキャンセルされました。";
-    return;
-  }
-  if(!/^[0-9]{6}$/.test(pwd)){
-    feedback.textContent = "無効なパスワード形式です。6桁の半角数字を入力してください。";
-    return;
-  }
-
-  const correct = "061004"; // 正しいパスワード
-  if(pwd === correct){
-    feedback.style.color = "#166534";
-    feedback.textContent = "パスワード認証に成功しました。資金の引出処理を開始します…";
-    setTimeout(() => {
-      feedback.textContent = "完了：資金 ¥4,611,303 を指定口座に割り当てました。詳細はSMSまたはメールでご確認ください。";
-    }, 1400);
-  } else {
-    feedback.style.color = "#b91c1c";
-    feedback.textContent = "パスワード認証に失敗しました。入力したパスワードが正しいかご確認ください。";
-  }
-}
-</script>
 </body>
 </html>
