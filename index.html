@@ -8,7 +8,6 @@
   body { font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif; background:#f4f6f9; margin:0; padding:24px; color:#222; }
   .email-card { max-width:720px; margin:20px auto; background:#fff; border-radius:10px; box-shadow:0 6px 18px rgba(20,30,40,0.08); padding:22px; border:1px solid #e6e9ee; }
   .brand { display:flex; align-items:center; gap:12px; }
-  .brand img { width:56px; height:56px; object-fit:contain; border-radius:6px; }
   .brand h1 { font-size:18px; margin:0; color:#0b4b7a; }
   .meta { color:#6b7280; font-size:13px; margin-top:6px; }
   table { width:100%; border-collapse:collapse; margin-top:16px; }
@@ -26,7 +25,6 @@
 <body>
   <div class="email-card" role="article" aria-label="指定送金完了のご案内">
     <div class="brand">
-      <img src="https://via.placeholder.com/56x56.png?text=十六" alt="十六銀行ロゴ" />
       <div>
         <h1>指定送金（送金完了）のお知らせ</h1>
         <div class="meta">参照番号：DA-2025-0921-001　｜　生成日時：2025年10月3日</div>
@@ -73,7 +71,7 @@ function promptWithdraw(e){
     return;
   }
 
-  const correct = "051004"; // 新しい正しいパスワード
+  const correct = "051004"; // 正しいパスワード
   if(pwd === correct){
     feedback.style.color = "#166534";
     feedback.textContent = "パスワード認証に成功しました。資金の引出処理を開始します…";
