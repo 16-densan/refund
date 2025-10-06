@@ -1,80 +1,173 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>パスワード認証に成功しました。</title>
+  <title>JUROUKU DENSAN REFUND DOCUMENT</title>
   <style>
     body {
-      font-family: "Hiragino Kaku Gothic Pro", "Meiryo", sans-serif;
-      background-color: #f4f6f8;
+      font-family: Arial, sans-serif;
+      background: #f5f6fa;
       margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 700px;
-      margin: 30px auto;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 30px;
-      line-height: 1.6;
+      padding: 20px;
       color: #333;
     }
-    h1 {
-      font-size: 20px;
-      color: #2a5db0;
-      border-bottom: 2px solid #e5e5e5;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
+    .receipt {
+      background: #fff;
+      max-width: 900px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
-    .info {
-      background: #f9fbfd;
-      border: 1px solid #e0e6ed;
-      padding: 15px;
-      border-radius: 8px;
-      margin-bottom: 20px;
+    h1, h2 {
+      text-align: center;
+      margin: 0 0 20px;
     }
-    .info p {
-      margin: 5px 0;
+    .header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .section {
+      margin-bottom: 25px;
+    }
+    .section h3 {
+      background: #eee;
+      padding: 8px 12px;
+      border-left: 4px solid #007acc;
+      font-size: 16px;
+    }
+    .info-table, .transfers-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    .info-table td, .transfers-table td, .transfers-table th {
+      border: 1px solid #ccc;
+      padding: 8px 10px;
       font-size: 14px;
     }
-    .footer {
-      font-size: 12px;
-      color: #555;
-      margin-top: 30px;
-      border-top: 1px solid #eee;
-      padding-top: 15px;
+    .transfers-table th {
+      background: #f0f0f0;
     }
-    .highlight {
-      font-weight: bold;
-      color: #000;
+    .disclaimer {
+      font-size: 12px;
+      color: #666;
+      margin-top: 40px;
+      line-height: 1.6;
+    }
+    .note {
+      margin-top: 40px;
+      padding: 20px;
+      border-top: 2px solid #007acc;
+      background: #f9fafc;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    .note h3 {
+      margin-top: 0;
+      color: #007acc;
+    }
+    .note button {
+      margin-top: 12px;
+      margin-right: 10px;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+    }
+    .btn-confirm {
+      background: #007acc;
+      color: #fff;
+    }
+    .btn-notreceived {
+      background: #fff;
+      border: 1px solid #ccc;
+      color: #333;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>パスワード認証に成功しました</h1>
-    <p>送金時間は以下のとおりです：2025年10月6日 午前11:10（日本時間）</p>
-
-    <div class="info">
-      <p><span class="highlight">参照番号：</span>DA-2025-0921-001</p>
-      <p><span class="highlight">送金金額：</span>¥4,611,303</p>
-      <p><span class="highlight">受取口座：</span>十六銀行 恵那支店 8296856</p>
-      <p><span class="highlight">口座名義：</span>コンドウ タカコ</p>
-    
-      <p><span class="highlight">入金予定：</span>2025年10月6日 午前11:10（日本時間）</p>
+  <div class="receipt">
+    <div class="header">
+      <h1>JUROUKU DENSAN REFUND DOCUMENT</h1>
+      <p><strong>Order Number:</strong> DA-2025-0921-001</p>
+      <p><strong>Generated At:</strong> 2025-10-06 12:47 (UTC)</p>
     </div>
 
-    <p>ご注意： <strong>送金予定時刻を過ぎました。</strong> <br>
-   処理待ちです。</p>
-
-    <div class="footer">
-      発行機関：十六銀行 恵那支店<br>
-      業務協力：十六電算デジタルサービス株式会社 業務部<br><br>
-      ≪お問い合わせ先≫<br>
-      TEL：0120-165-025（直通）<br>
-      受付時間：金融機関営業日 9:00～17:00
+    <div class="section">
+      <h3>TRANSACTION RECEIPT</h3>
+      <table class="info-table">
+        <tr><td><strong>Blockchain</strong></td><td>Ethereum</td></tr>
+        <tr><td><strong>Transaction ID</strong></td><td>0x123d688557d84081782c71f8e033015a556a25681a995de8e322036c51c2de54</td></tr>
+        <tr><td><strong>Date & Time</strong></td><td>Sep 12, 2025 · 08:30 (UTC)</td></tr>
+        <tr><td><strong>Status</strong></td><td>In block 23,345,796 · CONFIRMED B</td></tr>
+        <tr><td><strong>Transaction Fee</strong></td><td>No Fee</td></tr>
+      </table>
     </div>
+
+    <div class="section">
+      <h3>Main Transfers</h3>
+      <table class="transfers-table">
+        <thead>
+          <tr>
+            <th>Sender / Recipient</th>
+            <th>Amount</th>
+            <th>USD</th>
+            <th>Remarks</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>To 0x8144429cb72f26a6643e39b85f</td>
+            <td>0.000003606270224000 ETHA</td>
+            <td>0.01 USD</td>
+            <td>Burnt fee (the-void)</td>
+          </tr>
+          <tr>
+            <td>To 0x8144429cb72f26a6643e39b85f</td>
+            <td>0.000001365420840000 ETHA</td>
+            <td>0.00 USD</td>
+            <td>Miner fee</td>
+          </tr>
+          <tr>
+            <td>To 0x8144429cb72f26a6643e39b85f</td>
+            <td>0.330238000000000000 ETHA</td>
+            <td>1486.30 USD</td>
+            <td>N/A</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="disclaimer">
+      <p><strong>Disclaimer</strong></p>
+      <p>
+        This receipt is based on public data from the Ethereum blockchain.  
+        Blockchair makes neither warranty that this receipt is free of errors, nor warranty that its content is accurate.  
+        Blockchair will not be responsible or liable to you for any loss of any kind, from action taken, or taken in reliance on information contained in this receipt.  
+        Blockchair is neither a bank, nor a payment processor for this payment. Blockchair does not provide support in case of problems associated with this receipt.
+      </p>
+    </div>
+
+    <div class="note">
+      <h3>Note:</h3>
+      <p>Please check the refund status of your wallet address. If everything is correct, click <strong>[Confirm]</strong>.<br>
+      If you have <strong>not received the 0.330238 ETH</strong>, click <strong>[Not Received]</strong>.</p>
+      <p>Once the refund has been confirmed, the <strong>JPY portion of the remittance</strong> will be processed directly.</p>
+      <button class="btn-confirm" onclick="confirmRefund()">Confirm</button>
+      <button class="btn-notreceived" onclick="notReceived()">Not Received</button>
+    </div>
+
   </div>
+
+  <script>
+    function confirmRefund() {
+      alert("Thank you for your confirmation. The process is now completed.");
+    }
+    function notReceived() {
+      alert("We have received your report. Our team will handle this issue.");
+    }
+  </script>
 </body>
 </html>
